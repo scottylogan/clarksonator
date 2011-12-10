@@ -109,6 +109,6 @@ blockquote { align: center; background-color: #cca; padding: 20px; color: #444; 
 </style></head>
 <body><h1>Clarksonator</h1>
 <blockquote id='clarksonism'><?php echo $message; ?></blockquote>
-<button id='slapper' class='button' href='#'>Slap me again!</button>
+<a id='slapper' class='button' href='#'>Slap me again!</a>
 <a class='link' href='http://crispian-jago.blogspot.com/2011/12/make-your-very-own-clarksonator.html'>The Original</a>
 </body></html>
