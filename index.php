@@ -63,7 +63,7 @@ $message = $targets[mt_rand(0, count($targets) - 1)] . ' should ' . $retribution
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<link rel="apple-touch-icon" href="icon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link href='http://fonts.googleapis.com/css?family=Creepster+Caps' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
 <script type='text/javascript'>
