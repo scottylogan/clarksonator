@@ -1,5 +1,8 @@
 <?php
 
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // date in the past for older clients
+
 $targets = array(
 	'Ben Collins',
 	'Yanks',
@@ -86,26 +89,18 @@ document.addEventListener("DOMContentLoaded", function() {
             <?php echo json_encode($retributions); ?>[Math.floor(Math.random() * <?php echo count($retributions); ?>)];
         return false;
     });
+    document.getElementById('slapper').click();
 });
 </script>
 <style type='text/css'>
-@font-face {
-  font-family: 'Creepster Caps';
-  font-style: normal;
-  font-weight: normal;
-  src: url('CreepsterCaps-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Spinnaker';
-  font-style: normal;
-  font-weight: normal;
-  src: url('Spinnaker.ttf') format('truetype');
-}
+@font-face { font-family: 'Creepster Caps'; font-style: normal; font-weight: normal; src: url('CreepsterCaps-Regular.ttf') format('truetype');}
+@font-face { font-family: 'Spinnaker'; font-style: normal; font-weight: normal; src: url('Spinnaker.ttf') format('truetype'); }
 body { background-color: #4aa; }
 h1 { color: white; font-family: 'Creepster Caps', sans-serif; font-size: 3em; text-align: center; }
 blockquote { align: center; background-color: #cca; padding: 20px; color: #444; font-size: 1.3em; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; max-width: 600px; border: 2px solid #400; margin: 0 auto; text-align: center; font-family: 'Spinnaker', sans-serif; }
-.button { display: block; align: center; background-color: #c00; padding: 10px; color: #fff; text-decoration: none; font-size: 1em; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; max-width: 300px; border: 2px solid #fff; margin: 10px auto; text-align: center; font-family: 'Spinnaker', sans-serif; }
-.link { display: block; align: center; background-color: #cc0; padding: 10px; color: #fff; text-decoration: none; font-size: 1em; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; max-width: 150px; border: 2px solid #fff; margin: 0 auto; text-align: center; font-family: 'Spinnaker', sans-serif; }
+.button,.link { display: block; align: center; padding: 10px; text-decoration: none; font-size: 1em; border: 2px solid #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center; font-family: 'Spinnaker', sans-serif; }
+.button { background-color: #c00; color: #fff; max-width: 300px; margin: 10px auto; }
+.link { background-color: #cc0; color: #fff; max-width: 150px; margin: 0 auto; }
 </style></head>
 <body><h1>Clarksonator</h1>
 <blockquote id='clarksonism'><?php echo $message; ?></blockquote>
