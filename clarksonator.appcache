@@ -1,7 +1,7 @@
 CACHE MANIFEST
-# 1323502503
+# 1323503080
 index.html
-icon.png
+apple-touch-icon.png
 # local copies of Google Web Fonts, since Firefox whines about them in cache
 Spinnaker.ttf
 CreepsterCaps-Regular.ttf
