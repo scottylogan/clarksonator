@@ -1,6 +1,7 @@
 CACHE MANIFEST
-# 1323499413
+# 1323501090
 index.php
+index.html
 # local copies of Google Web Fonts, since Firefox whines about them in cache
 Spinnaker.ttf
 CreepsterCaps-Regular.ttf
