@@ -13,44 +13,27 @@ $targets = array(
 	'Cyclists',
 	'Thieving Scouse Gits',
 	'Greens',
-	'Sheep Shaggers',
 	'Students',
-	'Muslims',
 	'Environmentalists',
 	'Toyota Prius Drivers',
-	'The Disabled',
-	'Poofters',
-	'Dale Farm Residents',
 	'One-Eyed Scottish Idiots',
 	'Immigrants',
 	'Johnny Foreigner',
 	'The Unemployed',
 	'Wishy Washy Liberals',
-	'Single Mothers',
 	'Public Sector Strikers',
-	'Gypsies',
-	'Benefit Scroungers',
 	'Truck Drivers',
 	'Caravaners',
-	'Fatties',
-	'Bus Wankers',
-	'Jordan',
-	'Lazy, Feckless, Flatulent Mexicans'
+	'Fatties'
 );
 
 $retributions = array(
-	'be rolled in dog dirt and deep fried in the sump oil of a resonably priced car',
-	'be frozen in carbonite and hung in Eric Pickles\' living room',
-	'be taken outside and shot in front of their families',
 	'have their vote confiscated and given to Jim Davidson for safe keeping',
 	'have the Daily Mail shouted at them by Brian Blessed until they are brain dead',
-	'be put in the back seat of a Mercedes and driven through Paris at high speed by a drunk chauffeur',
 	'be seasoned with garlic, made into pies and fed to John Prescott',
 	'have a brown Morris Marina dropped on their head at an inconvenient moment',
 	'jolly well go out and get themselves a private pension, health insurance and an inflatable Sarah Palin doll',
-	'be dissected live on Channel 4 by Joy Reidenberg and Mark Evans',
-	'be dowsed in petrol and made to play drums for Spinal Tap',
-	'be strapped to the front of a dragster with dodgy brakes ddriven by a blind-folded Richard Hammond'
+	'be dowsed in petrol and made to play drums for Spinal Tap'
 );
 
 $message = $targets[mt_rand(0, count($targets) - 1)] . ' should ' . $retributions[mt_rand(0, count($retributions) - 1)];
